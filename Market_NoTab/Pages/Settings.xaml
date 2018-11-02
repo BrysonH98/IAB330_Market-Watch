@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Market_NoTab.Pages.Settings"
+             Title="Settings"
+             BackgroundColor="#8585ad">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="20">
+            <Frame CornerRadius="20" HorizontalOptions="FillAndExpand" BackgroundColor="#d1d1e0">
+                <StackLayout>
+               
+                    <Button Text="Account Info" 
+                        VerticalOptions="Center"/>
+                    <Button Text="Language" 
+                        VerticalOptions="Center"/>
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

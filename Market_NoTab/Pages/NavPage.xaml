@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Market_NoTab.Pages.NavPage"
+             Title="Navigation"
+             BackgroundColor="#8585ad">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="20">
+            <Frame CornerRadius="20" HorizontalOptions="FillAndExpand" BackgroundColor="#d1d1e0">
+                <StackLayout VerticalOptions="Center" >
+                    <Button Text="Feed"
+                    HorizontalOptions="FillAndExpand" 
+                    Clicked="To_Feed"/>
+                    <Button Text="Favourites"
+                    HorizontalOptions="FillAndExpand" 
+                    Clicked="To_Fav"/>
+                    <Button Text="Search"
+                    HorizontalOptions="FillAndExpand" 
+                    Clicked="To_Search"/>
+                    <Button Text="Settings"
+                    HorizontalOptions="FillAndExpand" 
+                    Clicked="To_Settings"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

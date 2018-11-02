@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Market_NoTab.Pages.FavouritesPage"
+             Title="Favourites"
+             BackgroundColor="#8585ad">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+            <ScrollView>
+                <ListView ItemsSource="{Binding Favourite_List}" RowHeight="150">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Margin="20" >
+                                    <Frame CornerRadius="20" HorizontalOptions="FillAndExpand" BackgroundColor="#d1d1e0">
+                                        <Grid>
+                                            <StackLayout  HorizontalOptions="FillAndExpand" Grid.Row="0">
+                                                <Label Text="{Binding businessName}"
+                                VerticalOptions="Center" 
+                                HorizontalOptions="Start" 
+                                TextColor="#8585ad"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Grid.Row="1">
+                                                <Label Text="{Binding location}"
+                                    HorizontalOptions="Start" 
+                                   TextColor="#8585ad"/>
+                                                <Label Text="{Binding phone}"
+                                    VerticalOptions="Center" 
+                                    HorizontalOptions="End" 
+                                   TextColor="#8585ad"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

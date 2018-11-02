@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Market_NoTab.Pages.SignUpPage"
+             Title="Sign Up"
+              BackgroundColor="#8585ad">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center" Margin="20">
+                <Frame CornerRadius="20" HorizontalOptions="FillAndExpand" BackgroundColor="#d1d1e0">
+                    <Grid>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Grid.Row="0" >
+                            <StackLayout  HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                                <Frame CornerRadius="10" HorizontalOptions="FillAndExpand"  BackgroundColor="White" >
+                                    <Entry  x:Name="Email_Entry"
+                                    Placeholder="Email"
+                                    PlaceholderColor="#8585ad"
+                                     BackgroundColor="White"
+                                    TextColor="#8585ad"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Grid.Row="1" >
+                            <StackLayout Orientation="Vertical"  
+                                     HorizontalOptions="FillAndExpand" 
+                                     VerticalOptions="Center">
+                                <Frame CornerRadius="10" HorizontalOptions="FillAndExpand"  BackgroundColor="White" >
+                                    <Entry  x:Name="Password_Entry"
+                                    IsPassword="True"
+                                    Placeholder="Password"
+                                    PlaceholderColor="#8585ad"
+                                    BackgroundColor="White"
+                                    TextColor="#8585ad"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Grid.Row="2" >
+                            <StackLayout Orientation="Vertical"  
+                                     HorizontalOptions="FillAndExpand" 
+                                     VerticalOptions="Center">
+                                <Frame CornerRadius="10" HorizontalOptions="FillAndExpand"  BackgroundColor="White" >
+                                    <Entry  x:Name="Confirm_Password_Entry"
+                                    IsPassword="True"
+                                    Placeholder="Confirm Password"
+                                    PlaceholderColor="#8585ad"
+                                    BackgroundColor="White"
+                                    TextColor="#8585ad"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Grid.Row="3" >
+                            <StackLayout Orientation="Vertical"  
+                                     HorizontalOptions="FillAndExpand" 
+                                     VerticalOptions="Center">
+                                <Frame CornerRadius="10" HorizontalOptions="FillAndExpand"  BackgroundColor="White" >
+                                    <Entry  x:Name="Phone_Entry"
+                                    IsPassword="True"
+                                    Placeholder="Phone Number"
+                                    PlaceholderColor="#8585ad"
+                                    BackgroundColor="White"
+                                    TextColor="#8585ad"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Grid.Row="4" >
+                            <StackLayout Orientation="Vertical"  
+                                     HorizontalOptions="FillAndExpand" 
+                                     VerticalOptions="Center">
+                                <Frame CornerRadius="10" HorizontalOptions="FillAndExpand"  BackgroundColor="White" >
+                                    <Entry  x:Name="Location_Entry"
+                                    IsPassword="True"
+                                    Placeholder="Location"
+                                    PlaceholderColor="#8585ad"
+                                    BackgroundColor="White"
+                                    TextColor="#8585ad"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout   HorizontalOptions="FillAndExpand" Grid.Row="5">
+                            <StackLayout  HorizontalOptions="FillAndExpand">
+                                <Button Text="Create Account" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

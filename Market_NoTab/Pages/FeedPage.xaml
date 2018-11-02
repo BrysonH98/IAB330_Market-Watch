@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Market_NoTab.Pages.FeedPage"
+             Title="Feed"
+             BackgroundColor="#8585ad">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#d1d1e0">
+            <Label Text="Feed" VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
